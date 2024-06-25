@@ -1,0 +1,92 @@
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\appsettings.Development.json
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\appsettings.json
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\SilentCarApp.exe
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\SilentCarApp.deps.json
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\SilentCarApp.runtimeconfig.json
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\SilentCarApp.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\SilentCarApp.pdb
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.csproj.AssemblyReference.cache
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.AssemblyInfoInputs.cache
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.AssemblyInfo.cs
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.csproj.CoreCompileInputs.cache
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.MvcApplicationPartsAssemblyInfo.cs
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.MvcApplicationPartsAssemblyInfo.cache
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.SilentCarApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.build.SilentCarApp.props
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SilentCarApp.props
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SilentCarApp.props
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\scopedcss\bundle\SilentCarApp.styles.css
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCa.D878C9B6.Up2Date
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\refint\SilentCarApp.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.pdb
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\SilentCarApp.genruntimeconfig.cache
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\obj\Debug\net8.0\ref\SilentCarApp.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\appsettings.json
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\SilentCarApp.exe
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\SilentCarApp.deps.json
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\SilentCarApp.runtimeconfig.json
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\SilentCarApp.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\SilentCarApp.pdb
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Микола\Downloads\SilentCarApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.csproj.AssemblyReference.cache
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.AssemblyInfoInputs.cache
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.AssemblyInfo.cs
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.csproj.CoreCompileInputs.cache
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.SilentCarApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.build.SilentCarApp.props
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SilentCarApp.props
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SilentCarApp.props
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\scopedcss\bundle\SilentCarApp.styles.css
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.csproj.CopyComplete
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.dll
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\refint\SilentCarApp.dll
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.pdb
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\SilentCarApp.genruntimeconfig.cache
+C:\Users\Микола\Downloads\SilentCarApp\obj\Debug\net8.0\ref\SilentCarApp.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Study\Основи програмування\Курсач\SilentCarApp\api\SilentCarApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

@@ -1,0 +1,298 @@
+
+<div id="app" style="width: 100%; margin: auto">
+    <div class="text-center">
+        <log-in-modal v-if="showLogInModal" @log-in="loginUser(), showLogInModal=false" @create="showSignInModal=true, showLogInModal=false">   
+        </log-in-modal>
+        <sign-in-modal v-if="showSignInModal" @sign-in="addNewUsers(), showSignInModal=false, showLogInModal=true">   
+        </sign-in-modal>
+        <h2 class="text-center ml-10">SilentCarApp</h2>
+        <button id="show-modal" @click="showLogInModal=true">Log-in</button>
+        <input id="newStart_Point"/>&nbsp;
+        <input id="newEnd_Point"/>&nbsp;
+        <button @click="addNewRoutes()" class="btn btn-primary">Add Routes</button>
+        <button @click="findRoutes()" class="btn btn-primary">Find Routes</button>
+        <div :id=route.id class="input-group mb-3 mt-3 row justify-content-md-center text-center ml-3" v-for="route in routes">
+            <input id="start_point" type="text" class="text-center col col-lg-2" disabled v-model="route.start_point">
+            <span class="col-md-auto">-</span>
+            <input id="end_point" class="text-center col-lg-2" disabled v-model="route.end_point">
+            <span class="input-group-append col-lg-1">
+            <button @click="checkinUser(route.id)" class="btn btn-secondary">Check-in</button>
+            <div  v-if="payload.id == route.driver_id">
+                <button @click="deleteRoutes(route.id)" class="ml-3 btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
+                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
+                </svg></button>
+                <button v-if="areSaving(route.id) === false" @click="changeRoutes(route.id)" class="ml-3 btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                </svg></button>
+                <button v-else @click="saveRoutes(route.id)" class="ml-3 btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-floppy" viewBox="0 0 16 16">
+                    <path d="M11 2H9v3h2z"></path>
+                    <path d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0M1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5m3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4zM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5z"></path>
+                </svg></button>
+            </div>
+          </span>
+        </div>
+    </div>
+</div>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://unpkg.com/vue@2"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+<script type="text/x-template" id="sign-in-template">
+    <div class="modal-mask">
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <div class="modal-body">
+            <slot name="body">
+              <h4>Create account:</h4>
+              <br>
+              <div class="input-group mb-3">
+                <input id="newName" type="text" class="form-control" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input id="newPhone_Number" type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input id="newPassword" type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+              </div>              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="newRole">Role</label>
+                </div>
+                <select class="custom-select" id="newRole">
+                  <option selected>Choose your role:</option>
+                  <option value="Passenger">Passenger</option>
+                  <option value="Driver">Driver</option>
+                </select>
+              </div>
+              <div>
+                <button @click="$emit('sign-in')" class="btn btn-primary mb-3">Create new account</button>
+              </div>
+            </slot>
+          </div>
+        </div>
+      </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="log-in-template">
+    <div class="modal-mask">
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <div class="modal-body">
+            <slot name="body">
+              <h4>Log-in account:</h4>
+              <br>
+              <div class="input-group mb-3">
+                <input id="phone_number" type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input id="password" type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+              </div>
+              <div>
+                <button @click="$emit('log-in')" class="btn btn-primary mb-3">Log-in</button>
+              </div>
+              <hr>
+              <div>
+                <h5 class="mb-3">Don`t have an account?</h5>
+              </div>
+              <div>
+                <button @click="$emit('create')" class="btn btn-secondary mb-3">Create new account</button>
+              </div>
+            </slot>
+          </div>
+        </div>
+      </div>
+    </div>
+</script>
+
+
+<script type="module">
+  import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+  const API_URL = "http://localhost:5153/";
+  const app = createApp({
+    data() {
+      return {
+        showLogInModal: true,
+        showSignInModal: false,
+        token: "",
+        role: "",
+        editingId: '',
+        isEdit: false,
+        title:"SilentCarApp",
+        routes:[],
+        payload: null,
+      }
+    },methods:{
+        async refreshData(){
+            axios.get(API_URL+"Routes", {
+              headers: {
+                'Authorization': `Bearer ${this.token}`
+              }
+            }).then(
+                (response)=>{
+                    this.routes=response.data;
+                }
+            )
+        },
+        areSaving(id){
+            var a = this.editingId == id;
+            return this.isEdit && a;
+        },
+        async addNewRoutes(){
+            var newStart_Point=document.getElementById("newStart_Point").value;
+            var newEnd_Point=document.getElementById("newEnd_Point").value;
+            const formData=new FormData();
+            formData.append("start_point", newStart_Point);
+            formData.append("end_point", newEnd_Point);
+            formData.append("driver_id", this.payload.id)
+
+            axios.post(API_URL+"Routes", formData, {
+              headers: {
+                'Authorization': `Bearer ${this.token}`
+              }
+            }).then(
+                (response)=>{
+                    this.refreshData();
+                    alert(response.data);
+                }
+            )
+        },
+        async deleteRoutes(id){
+            axios.delete(API_URL+"Routes/"+id, {
+              headers: {
+                'Authorization': `Bearer ${this.token}`
+              }
+            }).then(
+                (response)=>{
+                    this.refreshData();
+                    alert(response.data);
+                }
+            )
+        },
+        async changeRoutes(id){
+            var inputs=document.getElementById(id).getElementsByTagName('input');
+
+            Array.from(inputs).forEach(el =>
+                el.disabled = false
+            );
+
+            this.isEdit = true;
+            this.editingId = id;
+        },
+        async saveRoutes(id){
+            var Inputs=document.getElementById(id).getElementsByTagName('input');
+            var newStart_Point = Inputs[0].value;
+            var newEnd_Point = Inputs[1].value;
+
+            const formData=new FormData();
+            formData.append("newStart_point", newStart_Point);
+            formData.append("newEnd_point", newEnd_Point);
+
+            axios.put(API_URL+"Routes/"+id, formData, {
+              headers: {
+                'Authorization': `Bearer ${this.token}`
+              }
+            }).then(
+                (response)=>{
+                    this.refreshData();
+                    alert(response.data);
+                }
+            )
+
+            var inputs=document.getElementById(id).getElementsByTagName('input');
+
+            Array.from(inputs).forEach(el =>
+                el.disabled = true
+            );
+
+            this.isEdit = false;
+            this.editingId = id;
+        },
+        async findRoutes(){
+            var start_point=document.getElementById("newStart_Point").value;
+            var end_point=document.getElementById("newEnd_Point").value;
+
+            axios.get(API_URL+"Routes/filters?start_point="+start_point+"&end_point="+end_point, {
+              headers: {
+                'Authorization': `Bearer ${this.token}`
+              }
+            }).then(
+                (response)=>{
+                    this.routes=response.data;
+                }
+            )
+        },
+        async addNewUsers(){
+            var newName=document.getElementById("newName").value;
+            var newPhone_Number=document.getElementById("newPhone_Number").value;
+            var newPassword=document.getElementById("newPassword").value;
+            var newRole=document.getElementById("newRole").value;
+            const formData=new FormData();
+            formData.append("name", newName);
+            formData.append("phone_number", newPhone_Number);
+            formData.append("password", newPassword);
+            formData.append("role", newRole);
+
+            axios.post(API_URL+"Users", formData).then(
+                (response)=>{
+                    this.refreshData();
+                    alert(response.data);
+                }
+            )
+        },
+        async loginUser(){
+            var phone_number=document.getElementById("phone_number").value;
+            var password=document.getElementById("password").value;
+
+            axios.get(API_URL+"Users?phone_number="+phone_number+"&password="+password).then(
+                (response)=>{                  
+                    this.token = response.data;
+                    this.refreshData();
+                }                
+            ).then(() => {this.payload = this.parseJwt()})
+        },
+        async checkinUser(id){            
+            const formData=new FormData();
+            formData.append("user_id", this.payload.id)
+            formData.append("route_id", id);
+
+            axios.post(API_URL+"Routes/checkin", formData, {
+              headers: {
+                'Authorization': `Bearer ${this.token}`
+              }
+            }).then(
+                (response)=>{
+                    this.refreshData();
+                    alert(response.data);
+                }
+            )
+        },
+        parseJwt() {
+          const base64Url = this.token.split('.')[1];
+          const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+          const jsonPayload = decodeURIComponent(
+              atob(base64).split('').map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join('')
+            );
+
+          return JSON.parse(jsonPayload);
+        },
+    },mounted:function(){
+        this.refreshData();
+    }
+  });
+  app.component("log-in-modal", {
+        template: "#log-in-template"
+    });
+  app.component("sign-in-modal", {
+        template: "#sign-in-template"
+    });
+app.mount('#app');
+</script>
